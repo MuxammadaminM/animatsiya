@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-1 {
+    background-color: aqua;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+.card-2 {
+    background-color: aqua;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+.card-3 {
+    background-color: aqua;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+.card-4 {
+    background-color: aqua;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+.card-5 {
+    background-color: aqua;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+
+.card-1:hover { animation: rotate 3s infinite; }
+@keyframes rotate {
+    0% { transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.card-2:hover { animation: pulse 2s infinite; }
+@keyframes pulse {
+    0%, 100% {transform: scale(1);}
+    50% { transform: scale(1.2);}
+}
+.card-3:hover { animation: slideIn 2s infinite; }
+@keyframes slideIn{
+    0% { transform: translateX(-50%);}
+    50% { transform: translateX(0);}
+    100% { transform: translateX(50%);}
+}
+.card-4:hover { animation: fadeIn 2s infinite,;}
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    50% { opacity: 5;}
+    100% { opacity: 0;}
+}
+.card-5:hover { animation: bounce 2s infinite;}
+@keyframes bounce {
+    0% { transform: translateY(0);}
+    50% { transform: translateY(-20px);}
+    100% { transform: translateY(-10px);}
+}
